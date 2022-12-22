@@ -4,7 +4,7 @@ public class Holiday {
 
     private final String day;
     private final String event;
-    private final String type;
+    private final Type type;
 
     public String getDay() {
         return day;
@@ -14,7 +14,7 @@ public class Holiday {
         return event;
     }
 
-    public String getType() {
+    public Type getType() {
         return type;
     }
 
@@ -22,7 +22,7 @@ public class Holiday {
         FESTIVAL, FEDERAL
     }
 
-    public Holiday(String day, String event, String type) {
+    public Holiday(String day, String event, Type type) {
         this.day = day;
         this.event = event;
         this.type = type;

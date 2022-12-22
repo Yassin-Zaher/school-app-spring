@@ -50,7 +50,7 @@ Author URL: http://w3layouts.com
                         <div class="timeline">
                             <div th:each="holiday : ${FESTIVAL}" class="column">
                                 <div class="title">
-                                    <h2 th:text="${holiday.reason}"></h2>
+                                    <h2 th:text="${holiday.event}"></h2>
                                 </div>
                                 <div class="description">
                                     <h6 th:text="${holiday.day}" class="fas fa-calendar-alt"><i class="fas fa-calendar-alt"></i></h6>
@@ -65,7 +65,7 @@ Author URL: http://w3layouts.com
                     <div class="timeline">
                         <div th:each="holiday : ${FEDERAL}" class="column">
                             <div class="title">
-                                <h2 th:text="${holiday.reason}"></h2>
+                                <h2 th:text="${holiday.event}"></h2>
                             </div>
                             <div class="description">
                                 <h6 th:text="${holiday.day}" class="fas fa-calendar-alt"><i class="fas fa-calendar-alt"></i></h6>
